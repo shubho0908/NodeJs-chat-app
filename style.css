@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 50px;
+  filter: invert();
+}
+
+.switch {
+  position: absolute;
+  right: 30px;
+}
+
+#logo-txt {
+  margin-left: 10px;
+  font-size: 28px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.head-logo {
+  display: flex;
+  background-color: rgb(40, 40, 40);
+  flex-flow: row wrap;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.message-body {
+  height: 72vh;
+  width: 92%;
+  font-family: "Open Sans", sans-serif;
+  overflow-y: auto;
+}
+
+.mssg {
+  background-color: #128c7e;
+  margin: 10px;
+  padding: 15px;
+  max-width: 400px;
+  word-wrap: break-word;
+  border-radius: 6px;
+  display: inline;
+  color: white;
+}
+
+.left {
+  float: left;
+  clear: both;
+}
+
+.right {
+  clear: both;
+  float: right;
+}
+
+.join {
+  background-color: #69696976;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 6px;
+  display: inline;
+  color: white;
+}
+
+input {
+  width: 80vw;
+  height: 30px;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.898);
+  border-radius: 10px;
+}
+
+#send-btn {
+  cursor: pointer;
+  background-color: #128c7e;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 10px;
+  color: white;
+  width: 80px;
+  border-radius: 4px;
+  border: none;
+}
+
+#send-btn:hover {
+  background-color: #107a6e;
+}
+
+#send-box {
+  display: flex;
+  height: 9.9vh;
+  background-color: rgb(40, 40, 40);
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.head-logo::before {
+  content: "";
+  background: url("https://picsum.photos/1080/1920") no-repeat center
+    center/cover;
+  position: absolute;
+  opacity: 0.4;
+  filter: blur(5px);
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+@media (max-width: 520px) {
+  .mssg {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 380px) {
+  input {
+    width: 60vw;
+  }
+}
